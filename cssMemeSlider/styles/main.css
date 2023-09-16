@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --main-bg-color: #0B0C10;
+    --main-text-color: #66FCF1;
+    --secondary-bg-color: #1F2833;
+    --btnc-color: #45A28E;
+    --ff: font-family: 'Kanit', sans-serif;
+}
