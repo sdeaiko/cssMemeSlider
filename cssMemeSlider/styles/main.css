@@ -4,6 +4,168 @@
     --main-bg-color: #0B0C10;
     --main-text-color: #66FCF1;
     --secondary-bg-color: #1F2833;
-    --btnc-color: #45A28E;
-    --ff: font-family: 'Kanit', sans-serif;
+    --btn-color: #45A28E;
+    --ff: 'Kanit', sans-serif;
 }
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.memes-wrapper {
+    padding-top: 1rem;
+    max-width: 850px;
+    overflow: hidden;
+}
+
+.memes {
+    display: flex;
+    width: 4250px;
+    color: red;
+    transition: transform 1.5s ease-in-out;
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+}
+
+.meme-item {
+    width: 850px;
+    height: 550px;
+    border: 2px solid var(--main-text-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--ff);
+}
+
+.meme-item img {
+    width: 650px;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.meme-item .meme-text {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 2.5s ease forwards, transform 2.5s ease; 
+}
+
+.label-1 {
+    margin-left: 730px;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.meme-radio {
+    display: none;
+}
+
+
+
+.label-1 span,
+.label-2 span,
+.label-3 span,
+.label-4 span,
+.label-5 span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #45A28E;
+    display: inline-block; 
+}
+
+
+
+#first:checked ~ .memes-wrapper .memes {
+    transform: translateX(0);
+}
+
+#second:checked ~ .memes-wrapper .memes {
+    transform: translateX(-850px);
+}
+
+#third:checked ~ .memes-wrapper .memes {
+    transform: translateX(-1700px);
+}
+
+#fourth:checked ~ .memes-wrapper .memes {
+    transform: translateX(-2550px);
+}
+
+#fifth:checked ~ .memes-wrapper .memes {
+    transform: translateX(-3400px);
+}
+
+
+#first:checked ~ .memes-wrapper .memes .meme-item:nth-child(1) .meme-text {
+    animation: appear 3s ease forwards;
+}
+#second:checked ~ .memes-wrapper .memes .meme-item:nth-child(2) .meme-text {
+    animation: appear 2.5s ease forwards;
+}
+#third:checked ~ .memes-wrapper .memes .meme-item:nth-child(3) .meme-text {
+    animation: appear 2s ease forwards;
+}
+#fourth:checked ~ .memes-wrapper .memes .meme-item:nth-child(4) .meme-text {
+    animation: appear 2.5s ease forwards;
+}
+#fifth:checked ~ .memes-wrapper .memes .meme-item:nth-child(5) .meme-text {
+    animation: appear 3s ease forwards;
+}
+
+
+#first:checked ~ .memes-wrapper .label-1 span {
+    background-color: #66FCF1;
+}
+#second:checked ~ .memes-wrapper .label-2 span {
+    background-color: #66FCF1;
+}
+#third:checked ~ .memes-wrapper .label-3 span {
+    background-color: #66FCF1;
+}
+#fourth:checked ~ .memes-wrapper .label-4 span {
+    background-color: #66FCF1;
+}
+#fifth:checked ~ .memes-wrapper .label-5 span {
+    background-color: #66FCF1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
