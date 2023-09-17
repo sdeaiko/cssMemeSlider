@@ -122,6 +122,14 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
 }
 
+.label-1 span:active,
+.label-2 span:active,
+.label-3 span:active,
+.label-4 span:active,
+.label-5 span:active {
+    filter: brightness(0.7);
+}
+
 
 
 
