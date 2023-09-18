@@ -98,6 +98,20 @@ body {
     display: flex;
 }
 
+.label-1,
+.label-2,
+.label-3,
+.label-4,
+.label-5{
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    margin: 0.32em; 
+    transition: background-color 0.7s ease, box-shadow 0.7s ease; 
+    cursor: pointer; 
+}
+
 .label-1 span,
 .label-2 span,
 .label-3 span,
@@ -105,28 +119,29 @@ body {
 .label-5 span {
     width: 1.5rem;
     height: 1.5rem;
+    display: inline-block;
+    margin: 0.1em; 
+    transition: background-color 0.7s ease, box-shadow 0.7s ease;  
     border-radius: 50%;
     background-color: #45A28E;
-    display: inline-block;
-    margin: 0.32em; 
-    transition: background-color 0.7s ease, box-shadow 0.7s ease; 
-    cursor: pointer; 
 }
 
-.label-1 span:hover,
-.label-2 span:hover,
-.label-3 span:hover,
-.label-4 span:hover,
-.label-5 span:hover {
+
+.label-1:hover span,
+.label-2:hover span,
+.label-3:hover span,
+.label-4:hover span,
+.label-5:hover span {
     background-color: var(--main-text-color); 
     box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.5); 
 }
 
-.label-1 span:active,
-.label-2 span:active,
-.label-3 span:active,
-.label-4 span:active,
-.label-5 span:active {
+
+.label-1:active span,
+.label-2:active span,
+.label-3:active span,
+.label-4:active span,
+.label-5:active span {
     filter: brightness(0.7);
 }
 
