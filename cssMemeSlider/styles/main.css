@@ -102,14 +102,15 @@ body {
 .label-2,
 .label-3,
 .label-4,
-.label-5{
+.label-5 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
     height: 2rem;
-    display: inline-block;
-    margin: 0.32em; 
-    transition: background-color 0.7s ease, box-shadow 0.7s ease; 
-    cursor: pointer; 
+    margin: 0.2em;
+    transition: background-color 0.7s ease, box-shadow 0.7s ease;
+    cursor: pointer;
 }
 
 .label-1 span,
@@ -120,11 +121,12 @@ body {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;
-    margin: 0.1em; 
-    transition: background-color 0.7s ease, box-shadow 0.7s ease;  
+    margin: 0; 
+    transition: background-color 0.7s ease, box-shadow 0.7s ease;
     border-radius: 50%;
     background-color: #45A28E;
 }
+
 
 
 .label-1:hover span,
